@@ -1,0 +1,94 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    text-align: center;
+    margin: 0;
+    overflow: hidden;
+    background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_dF-d8FwgSxpKIidn0O9HHwbhuy5Hypi3jQ&usqp=CAU') no-repeat center center fixed;
+    background-size: cover;
+}
+
+#background-animation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    animation: gradientAnimation 10s infinite alternate;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+#quiz-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 255, 255, 0.8); /* Add a semi-transparent white background */
+    position: relative;
+}
+
+h2 {
+    color: #4285f4;
+}
+
+#question-container {
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#options-container {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+input[type="radio"] {
+    margin-right: 8px;
+}
+
+label {
+    display: inline-block;
+    background-color: #4285f4;
+    color: #fff;
+    padding: 8px;
+    border-radius: 5px;
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+
+label:hover {
+    background-color: #3172d9;
+}
+
+button {
+    background-color: #34a853;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #2e8a3b;
+}
+
+#result-container {
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 20px;
+    color: #4285f4;
+}
